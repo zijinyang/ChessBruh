@@ -3,8 +3,8 @@ public class Player{
   public Boolean turn;
 
   public Player(){
-    
+    taken = new ArrayList<Pieces>();
+    turn = false;
   }
 
-  
 }
