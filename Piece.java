@@ -1,4 +1,5 @@
-//basic frame for all pieces
-public class Piece{
-  
+import org.javatuples.Pair;
+
+public interface Piece {
+
 }
