@@ -7,6 +7,14 @@ public class Board{
   public Board(){
     
   }
+
+  public void add(Piece p, Coord c){
+    
+  }
+
+  pubic void remove(Coord c){
+    
+  }
   
   public void newgame(){
     
