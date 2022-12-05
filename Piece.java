@@ -1,14 +1,14 @@
 public interface Piece {
-	private int row, col;
+	public Coord c;
 
-	public void setRow(int row);
-	public void setCol(int col);
-	public int getRow();
-	public int getCol();
+	public default Coord getCoord(){
+    return c;
+  }
 
-	public Coord getCoord();
-	public void setCoord(Coord coord);
+	public void setCoord(Coord coord){
+    c = coord
+  }
 
 	public ArrayList<Coord> possibleMoves();
-	public boolean move(int drow, int dcol);
+	public boolean move(Coord d);
 }
