@@ -1,5 +1,5 @@
 public class Chess{
   public Chess(){
-    Board b - new Board();
+    Board b = new Board();
   }
 }

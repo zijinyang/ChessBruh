@@ -1,5 +1,5 @@
 public class Coord {
-	public final int row, col;
+	public int row, col;
 
 	public Coord(int row, int col) {
 		this.row = row;
@@ -7,7 +7,7 @@ public class Coord {
 	}
 
   public boolean isOnBoard(){
-    return row > 0 && row < 8 && col > 0 && row < 8;
+    return row >= 0 && row < 8 && col >= 0 && col < 8;
   }
 
 	@Override

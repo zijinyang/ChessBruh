@@ -1,14 +1,21 @@
-public interface Piece {
-	public Coord c;
+import java.util.*;
 
-	public default Coord getCoord(){
-    return c;
-  }
+public abstract class Piece {
+	public Coord coord;
+	public boolean bwhite;
+
+	public Piece(Coord coord, boolean bwhite) {
+		this.coord = coord;
+		this.bwhite = bwhite;
+	}
+
+	public Coord getCoord(){
+		return coord;
+	}
 
 	public void setCoord(Coord coord){
-    c = coord
-  }
+		this.coord = coord;
+	}
 
-	public ArrayList<Coord> possibleMoves();
-	public boolean move(Coord d);
+	public abstract List<Coord> possibleMoves();
 }

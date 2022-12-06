@@ -1,10 +1,13 @@
-public class Player{
-  public List<Pieces> taken;
-  public Boolean turn;
+import java.util.List;
+import java.util.ArrayList;
 
-  public Player(){
-    taken = new ArrayList<Pieces>();
-    turn = false;
-  }
+public class Player {
+	public List<Piece> taken;
+	public Boolean turn;
+
+	public Player() {
+		taken = new ArrayList<Piece>();
+		turn = false;
+	}
 
 }
